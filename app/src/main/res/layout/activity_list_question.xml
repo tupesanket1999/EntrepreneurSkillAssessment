@@ -12,7 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bar"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:layout_margin="12dp"
+        android:layout_above="@+id/end">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -28,7 +30,9 @@
         android:layout_height="wrap_content"
         android:text="END TEST"
         android:id="@+id/end"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#e53935"
+        android:textColor="@color/white">
     </Button>
 
 </RelativeLayout>

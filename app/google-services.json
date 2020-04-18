@@ -34,6 +34,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558291834657:android:8a1eba3af28281e8121060",
+        "android_client_info": {
+          "package_name": "com.nabha.EntrepreneurSkillAssessment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558291834657-tg1kl0p8kqh28j3ikt7rda3uacio8vpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaIPVKM60XU1ItuQ5CKNuBS9Zx-8A1gvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558291834657-tg1kl0p8kqh28j3ikt7rda3uacio8vpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

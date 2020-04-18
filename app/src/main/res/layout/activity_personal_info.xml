@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PersonalInfo"
-    android:background="@color/colorPrimary">
+    android:padding="12dp">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -15,7 +16,8 @@
         android:id="@+id/pers"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
     </TextView>
 
     <ScrollView
@@ -23,176 +25,257 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/gto_quiz"
         android:layout_margin="12dp"
-        android:layout_below="@id/pers">
+        android:layout_below="@id/pers"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="">
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
-            android:drawablePadding="10dp"
-            android:hint="Name"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="4dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="name"
+                android:layout_weight="1"
+                android:id="@+id/nameHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="surname"
+                android:layout_weight="1"
+                android:id="@+id/surnameHint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/surname"
+                    android:maxLines="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
             android:maxLines="1"
-            android:id="@+id/name"/>
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
-            android:drawablePadding="10dp"
-            android:hint="Surname"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:id="@+id/surname"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
             android:hint="Class"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:id="@+id/classN"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
-            android:hint="cast"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:id="@+id/cast"/>
+            android:layout_margin="4dp"
+            android:id="@+id/classNHint">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
-            android:hint="Date of Birth"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:id="@+id/dob"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
-            android:hint="Area of Interest"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:id="@+id/intrest"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
-            android:hint="Family Income source"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:id="@+id/income"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/classN"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:id="@+id/spinner"
+            android:entries="@array/casteArray"
+            android:prompt="@string/caste_promote"
+            android:layout_margin="4dp">
+        </Spinner>
+
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
-            android:hint="Annual Income of the Family:"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
+            android:orientation="horizontal"
+            android:gravity="center|left">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth : "
+                android:textSize="18sp"
+                android:id="@+id/dobH"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dob"
+                android:drawableLeft="@drawable/cal"
+                android:layout_margin="4dp"/>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:maxLines="1"
-            android:id="@+id/aincome"/>
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="15dp"
-            android:background="@drawable/shapeemail"
+            android:hint="Phone"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:id="@+id/phoneHint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:text="+91 "
+                android:id="@+id/phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area of Intrest"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:id="@+id/intrestHint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/intrest"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Family income source"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:id="@+id/incomeHint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/income"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Annual income of family"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:id="@+id/aincomeHint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aincome"
+                android:inputType="number"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="Estate belonging"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorHighlight="@color/white"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:id="@+id/estate"/>
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:id="@+id/estateHint">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/estate"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_for_radio"
+            android:padding="4dp"
+            android:layout_margin="2dp"
+            android:id="@+id/mLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="marital status"
+                android:layout_marginLeft="4dp"></TextView>
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:id="@+id/mgroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Single"
+                android:id="@+id/umr"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Married"
             android:id="@+id/mr"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Unmarried"
-            android:id="@+id/umr"/>
+
         </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_for_radio"
+            android:layout_margin="2dp"
+            android:id="@+id/uLayout"
+            android:padding="4dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:layout_marginLeft="4dp"/>
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:padding="2dp"
+            android:id="@+id/ugroup">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rural"
                 android:id="@+id/rr"/>
             <RadioButton
+                android:layout_marginLeft="18dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Urban"
                 android:id="@+id/ur"/>
         </RadioGroup>
-
+            </LinearLayout>
 
     </LinearLayout>
     </ScrollView>
 
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="goto Quiz"
+        android:text="Register"
         android:id="@+id/gto_quiz"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"/>
-
 </RelativeLayout>

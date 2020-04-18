@@ -1,44 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.testapplication">
+    package="com.nabha.EntrepreneurSkillAssessment">
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon_final"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PersonalInfo"></activity>
-        <activity android:name=".Instructions"
-            android:exported="true"
-            android:theme="@style/NoTitle"/>
-        <activity
-            android:name=".ListQuestion"
-            android:exported="true" />
-        <activity
-            android:name=".Results"
-            android:exported="true"
-            android:theme="@style/NoTitle" />
-        <activity
-            android:name=".Quiz"
-            android:exported="true"
-            android:theme="@style/NoTitle" />
-        <activity
-            android:name=".SignupScreen"
-            android:exported="true"
-            android:theme="@style/NoTitle" />
-        <activity
-            android:name=".LoginScreen"
-            android:exported="true"
-            android:theme="@style/NoTitle">
+        <activity android:name="com.nabha.EntrepreneurSkillAssessment.SplashActivity" android:theme="@style/AppTheme.Launcher" android:configChanges="uiMode" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.nabha.EntrepreneurSkillAssessment.Dashboard"
+            android:theme="@style/NoTitle"
+            android:exported="true"/>
+
+        <activity android:name="com.nabha.EntrepreneurSkillAssessment.PersonalInfo"
+            android:theme="@style/NoTitle"/>
+
+        <activity
+            android:name="com.nabha.EntrepreneurSkillAssessment.Instructions"
+            android:exported="true"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name="com.nabha.EntrepreneurSkillAssessment.ListQuestion"
+            android:exported="true"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name="com.nabha.EntrepreneurSkillAssessment.Results"
+            android:exported="true"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name="com.nabha.EntrepreneurSkillAssessment.Quiz"
+            android:exported="true"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name="com.nabha.EntrepreneurSkillAssessment.SignupScreen"
+            android:exported="true"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name="com.nabha.EntrepreneurSkillAssessment.LoginScreen"
+            android:exported="true"
+            android:theme="@style/NoTitle">
+        </activity>
+        <activity android:name="com.nabha.EntrepreneurSkillAssessment.MainActivity" />
     </application>
 
 </manifest>

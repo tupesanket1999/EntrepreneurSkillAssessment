@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">TestApplication</string>
+    <string name="app_name">Entrepreneur Skill Assessment</string>
+    <string name="department_of_lifelong_learning_and_extension">DEPARTMENT OF LIFELONG LEARNING AND EXTENSION</string>
+    <string name="savitribai_phule_pune_university">SAVITRIBAI PHULE PUNE UNIVERSITY</string>
+    <string name="nabha_entrepreneurial_skill_assessment_scale">NABHA ENTREPRENEURIAL SKILL ASSESSMENT SCALE</string>
+    <string name="developed_by_dr_navnath_bhagchand_tupe">DEVELOPED BY DR. NAVNATH BHAGCHAND TUPE</string>
+
+
+    <string name="caste_promote">Select a caste</string>
+
+    <string-array name="casteArray">
+        <item>OPEN</item>
+        <item>OBC</item>
+        <item>SBC</item>
+        <item>SEBC</item>
+        <item>SC</item>
+        <item>ST</item>
+        <item>VJ/NT</item>
+        <item>other</item>
+    </string-array>
 </resources>

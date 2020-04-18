@@ -30,31 +30,27 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1) This scale is developed to assess the basic level of Entrepreneurial Skills.\n">
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="2)This is a Self-Assessment Scale.\n">
+                android:text="1) This scale is developed to assess the basic level of Entrepreneurial Skills. This is a Self-Assessment Scale.\n">
             </TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3) You are requested to read the instructions carefully and indicate how much you agree or disagree with each of the following statements by choosing a number between 1 to 10 \n">
+                android:text="2) You are requested to read the instructions carefully and indicate how much you agree or disagree with each of the following statements by choosing a number between 1 to 10. where “1” indicates that you strongly disagree (SD) with the statement and a “10” means you strongly agree with the statement. A “5” indicates you only slightly disagree (SLD) and a “6” shows only slight agreement (SLA)">
             </TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="4) where “1” indicates that you strongly disagree (SD) with the statement and a “10” means you strongly agree with the statement. A “5” indicates you only slightly disagree (SLD) and a “6” shows only slight agreement (SLA)">
+                android:layout_marginTop="24dp"
+                android:text="e.g.">
             </TextView>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="400dp"
                 android:src="@drawable/insn"
                 android:scaleType="fitCenter"
-                android:layout_margin="24dp"/>
+                android:tint="@color/darktint"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -65,7 +61,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6) Click on Finish to view submitted questions\n">
+                android:text="6) Click on View to view submitted questions\n">
             </TextView>
 
             <TextView
@@ -84,6 +80,8 @@
         android:text="I agree"
         android:id="@+id/start_quiz"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white">
     </Button>
 </RelativeLayout>
